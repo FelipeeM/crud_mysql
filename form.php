@@ -62,7 +62,7 @@ if(isset($_POST['btn_save'])){
                 <?php require_once 'includes/sidebar.php'; ?>
                 <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
                   <h1 style="margin-top: 10px">Adicionar / Editar</h1>
-                  <p>Required fields are in (*)</p>
+                  <p>Campos Requeridos (*)</p>
                   <form  method="post">
                     <div class="form-group">
                         <label for="id">ID</label>
