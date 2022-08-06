@@ -151,14 +151,14 @@ if(isset($_POST['btn_save'])){
                       $('#btn_add').prop('disabled', true);
                       $("#select_prd").on('change', function() {
                         price = $(this).find('option:selected').val();
-                        $('#prd_price').val("R$ "+price); 
-                        $('#total_value').val("R$ "+(amount*price));  
+                        $('#prd_price').val("R$ "+price/100); 
+                        $('#total_value').val("R$ "+(amount*(price/100)));  
                         
                       });
                       $("#amount").blur( function() {                      
                         amount = $('#amount').val();                        
                         //alert("O input perdeu o foco.");
-                        $('#total_value').val("R$ "+(amount*price));    
+                        $('#total_value').val("R$ "+(amount*(price/100)));    
                       });
                       
                       
